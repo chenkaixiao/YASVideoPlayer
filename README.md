@@ -7,5 +7,5 @@
  * 回调audioDataBlock能够实时获取播放时每一帧音频
  
  缺点：
- * 法设置audioDataBlock和videoDataBlock回调的频率
+ * 无法设置audioDataBlock和videoDataBlock回调的频率
 
