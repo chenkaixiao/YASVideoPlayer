@@ -2,7 +2,7 @@ YASVideoPlayer
 =====
 
 
-** YASVideoPlayer播放器是结合36Kr的KRVideoPlayerController和金山云KSMediaPlayer修改的框架。**
+**YASVideoPlayer播放器是结合36Kr的KRVideoPlayerController和金山云KSMediaPlayer修改的框架。**
  
 ## Features
 
@@ -13,7 +13,7 @@ YASVideoPlayer
 -[x] 支持切换分辨率播放功能
  
  缺点：
--[x] 无法设置audioDataBlock和videoDataBlock回调的频率
+ -[x] 无法设置audioDataBlock和videoDataBlock回调的频率
 
 ## Usage example 
 ```objc
