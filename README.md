@@ -6,7 +6,7 @@
  * 统方法drawViewHierarchyInRect:afterScreenUpdates截取屏幕时，播放器视图不黑屏
  * 调videoDataBlock能够实时获取播放时每一帧视频
  * 回调audioDataBlock能够实时获取播放时每一帧音频
- * 支持切换分辨率功能
+ * 支持切换分辨率播放功能
  
  缺点：
  * 无法设置audioDataBlock和videoDataBlock回调的频率
