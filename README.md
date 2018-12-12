@@ -7,13 +7,15 @@ YASVideoPlayer
 ## Features
 
 优点：
--[x] 统方法drawViewHierarchyInRect:afterScreenUpdates截取屏幕时，播放器视图不黑屏
--[x] 调videoDataBlock能够实时获取播放时每一帧视频
--[x] 回调audioDataBlock能够实时获取播放时每一帧音频
--[x] 支持切换分辨率播放功能
+
+- [x] 	统方法drawViewHierarchyInRect:afterScreenUpdates截取屏幕时，播放器视图不黑屏
+- [x] 	调videoDataBlock能够实时获取播放时每一帧视频
+- [x] 	回调audioDataBlock能够实时获取播放时每一帧音频
+- [x] 	支持切换分辨率播放功能
  
  缺点：
- -[x] 无法设置audioDataBlock和videoDataBlock回调的频率
+ 
+- [x] 	无法设置audioDataBlock和videoDataBlock回调的频率
 
 ## Usage example 
 ```objc
