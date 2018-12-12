@@ -19,35 +19,35 @@ YASVideoPlayer
 
 ## Usage example 
 ```objc
-        CGFloat width = [UIScreen mainScreen].bounds.size.width;
-        CGFloat height = width * (9.0 / 16.0);
-        CGFloat y = [UIScreen mainScreen].bounds.size.height - height;
-        self.videoController = [[YASVideoPlayerController alloc] initWithFrame:CGRectMake(0, y, width, height) ContentURL:nil];
-  
-        [self configObserver];
-        LKWeakSelf;
-        [self.videoController setDimissCompleteBlock:^{
-        }];
-        [self.videoController show:AppDelegateInstance().window];
-        
-        
-        [self.videoController setVideoURL:url];
-        
-        
-        
-        // MARK - CallBack
-        - (void)videoPlayerControllerDidStartPlaying:(YASVideoPlayerController *)moviePlayerController;
-        - (void)videoPlayerControllerDidPausedPlay:(YASVideoPlayerController *)moviePlayerController;
-        - (void)videoPlayerControllerDidStopPlay:(YASVideoPlayerController *)moviePlayerController;
+CGFloat width = [UIScreen mainScreen].bounds.size.width;
+CGFloat height = width * (9.0 / 16.0);
+CGFloat y = [UIScreen mainScreen].bounds.size.height - height;
+self.videoController = [[YASVideoPlayerController alloc] initWithFrame:CGRectMake(0, y, width, height) ContentURL:nil];
 
-        - (void)videoPlayerControllerDidShow:(YASVideoPlayerController *)moviePlayerController;
-        - (void)videoPlayerControllerDidDimissComplete:(YASVideoPlayerController *)moviePlayerController;
+[self configObserver];
+LKWeakSelf;
+[self.videoController setDimissCompleteBlock:^{
+}];
+[self.videoController show:AppDelegateInstance().window];
 
-        - (void)videoPlayerController:(YASVideoPlayerController *)moviePlayerController videoData:(CMSampleBufferRef)pixelBuffer;
-        - (void)videoPlayerController:(YASVideoPlayerController *)moviePlayerController audioData:(CMSampleBufferRef)sampleBuffer;
 
-        - (void)videoPlayerControllerDidFullScreen:(YASVideoPlayerController *)moviePlayerController;
-        - (void)videoPlayerControllerDidNotFullScreen:(YASVideoPlayerController *)moviePlayerController;
+[self.videoController setVideoURL:url];
+
+
+
+// MARK - CallBack
+- (void)videoPlayerControllerDidStartPlaying:(YASVideoPlayerController *)moviePlayerController;
+- (void)videoPlayerControllerDidPausedPlay:(YASVideoPlayerController *)moviePlayerController;
+- (void)videoPlayerControllerDidStopPlay:(YASVideoPlayerController *)moviePlayerController;
+
+- (void)videoPlayerControllerDidShow:(YASVideoPlayerController *)moviePlayerController;
+- (void)videoPlayerControllerDidDimissComplete:(YASVideoPlayerController *)moviePlayerController;
+
+- (void)videoPlayerController:(YASVideoPlayerController *)moviePlayerController videoData:(CMSampleBufferRef)pixelBuffer;
+- (void)videoPlayerController:(YASVideoPlayerController *)moviePlayerController audioData:(CMSampleBufferRef)sampleBuffer;
+
+- (void)videoPlayerControllerDidFullScreen:(YASVideoPlayerController *)moviePlayerController;
+- (void)videoPlayerControllerDidNotFullScreen:(YASVideoPlayerController *)moviePlayerController;
 
 ```
 
